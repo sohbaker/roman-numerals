@@ -22,8 +22,8 @@ class RomanNumerals
 
     numerals_list.each do |key, value|
         while arabic >= key
-              split_numbers << value
-              arabic -= key
+          split_numbers << value
+          arabic -= key
         end
     end
       return split_numbers.join
