@@ -26,4 +26,8 @@ RSpec.describe RomanNumerals do
     expect(roman_numerals.convert(667)).to eq('DCLXVII')
   end
 
+  it 'converts 5348 to "MMMMMCCCXLVIII"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(5348)).to eq('MMMMMCCCXLVIII')
+  end
 end
