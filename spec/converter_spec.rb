@@ -20,4 +20,10 @@ RSpec.describe RomanNumerals do
     roman_numerals = RomanNumerals.new
     expect(roman_numerals.convert(15)).to eq('XV')
   end
+
+  it 'converts 667 to "DCLXVII"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(667)).to eq('DCLXVII')
+  end
+
 end
